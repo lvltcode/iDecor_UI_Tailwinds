@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1, width=device-width" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../css/global.css" />
+  <link rel="stylesheet" href="../css/output.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@600&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap" />
+</head>
+<body>
+  <div class="w-full relative bg-white overflow-hidden flex flex-col items-end justify-start pt-0 px-0 pb-[200px] box-border gap-[20px] leading-[normal] tracking-[normal]">
+    <img class="w-2.5 h-3 relative hidden z-[0]" alt="" />
+    <header class="self-stretch bg-white flex flex-row items-center justify-between py-[12px] pr-[50px] pl-[20px] box-border top-[0] z-[99] sticky max-w-full gap-[10px] text-left text-3xl text-seagreen-200 font-red-hat-display">
+      <div class="flex flex-row items-center justify-start gap-[8px]">
+        <a href="index.html" class="flex flex-row items-center justify-start gap-[8px] [text-decoration:none] text-[inherit]">
+          <img class="w-[20px] h-[25px] relative max-h-full min-h-[25px] z-[1]" loading="lazy" alt="" src="../images/clip-path-group1.svg" />
+          <span class="relative font-semibold text-[inherit] inline-block min-w-[60px] z-[1]">iDecor</span>
+        </a>
+      </div>
+      
+      <div class="flex flex-row items-center justify-start gap-[10px] text-black font-nunito">
+        <div class="h-10 w-10 rounded-full overflow-hidden">
+          <img src="https://randomuser.me/api/portraits/women/21.jpg" alt="Profile Picture" class="h-full w-full object-cover">
+        </div>
+        <a href="/account" class="text-decoration-none text-black font-semibold text-lg hover:text-indigo-500 transition-colors duration-150">
+          [Account]
+        </a>
+        <button class="flex items-center justify-center bg-darkorange hover:bg-indigo-500 text-white font-semibold rounded-full px-3 py-1 shadow-md transition-transform duration-150 ease-in-out transform hover:scale-105 text-sm">
+          <span>Sign Out</span>
+        </button>
+      </div>
+    </header>
+    
+    <div class="self-stretch h-[9px] flex flex-row items-start justify-start pt-0 px-0 pb-7 box-border max-w-full">
+      <div class="self-stretch flex-1 relative box-border max-w-full border-t-[1px] border-solid border-whitesmoke"></div>
+    </div>
+    <!-- Divider and Main Content Start -->
+    <main class="w-[1353px] flex flex-row items-start justify-start py-0 px-20 box-border max-w-full mq1275:pl-10 mq1275:pr-10 mq1275:box-border">
+      <section class="flex-1 flex flex-col items-start justify-start gap-[27px] max-w-full text-left text-13xl text-black font-nunito mq750:gap-[27px]">
+        <div class="w-full flex flex-row items-start justify-start py-0 px-[15px] box-border max-w-full text-gray-800">
+          <div class="flex-1 flex flex-col items-start justify-start gap-[15px] max-w-full">
+            <a href="index.html" class="[text-decoration:none] relative inline-block min-w-[97px] text-lg font-semibold text-blue-600 hover:text-blue-800 transition-colors duration-200 mq750:text-md mq450:text-sm">
+              &lt; Back
+            </a>
+            <div class="self-stretch flex flex-col items-start justify-start gap-[20px] text-lg text-black mq750:gap-[10px]">
+              <div class="self-stretch flex flex-row flex-wrap items-start justify-start gap-[30px] mq750:gap-[15px]">
+                <div class="flex flex-col items-start justify-start pt-[10px] px-0 pb-0">
+                  <h3 class="m-0 relative text-inherit font-semibold font-inherit text-2xl text-gray-800 mq750:text-xl mq450:text-lg">Room Type</h3>
+                </div>
+                <div class="flex-1 rounded-2xl box-border flex flex-row items-start justify-start py-2 px-[15px] min-w-[158px] z-[1] border-[1px] border-solid border-gray-300">
+                  <select class="relative text-lg text-gray-800 mq750:text-md mq450:text-sm w-full h-full rounded-2xl border-none focus:outline-none focus:ring-2 focus:ring-blue-300">
+                    <option value="living-room">Living Room</option>
+                    <option value="dining-room">Dining Room</option>
+                    <option value="bedroom">Bedroom</option>
+                    <option value="bathroom">Bathroom</option>
+                    <option value="office">Office</option>
+                    <option value="gaming-room">Gaming Room</option>
+                    <option value="kitchen">Kitchen</option>
+                    <option value="garage">Garage</option>
+                    <option value="balcony">Balcony</option>
+                    <option value="patio">Patio</option>
+                    <option value="gym">Gym</option>
+                    <option value="library">Library</option>
+                    <option value="studio">Studio</option>
+                    <option value="laundry-room">Laundry Room</option>
+                    <option value="basement">Basement</option>
+                    <option value="attic">Attic</option>
+                    <option value="hallway">Hallway</option>
+                    <option value="staircase">Staircase</option>
+                    <option value="closet">Closet</option>
+                    <option value="sunroom">Sunroom</option>
+                    <option value="mudroom">Mudroom</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Room Style Cards -->
+        <div class="self-stretch flex flex-col items-center justify-center py-0 px-[3px] w-full mb-4">
+          <h3 class="m-0 relative text-inherit font-semibold font-inherit text-2xl text-gray-800 mq750:text-xl mq450:text-lg">Room Style</h3>
+        </div>
+        <div class="self-stretch flex flex-row flex-wrap items-center justify-center pt-0 px-0 pb-[13px] box-border gap-[26px_29.7px] min-h-[495px] text-5xl">
+          <!-- Modern Style -->
+          <div class="style-card h-[228px] w-[275px] rounded-2xl box-border flex flex-col items-center justify-start pt-[18px] pb-7 pr-[15px] pl-4 gap-[13px] z-[1] border-[1px] border-solid border-gray-300 bg-white shadow-lg cursor-pointer transform transition-transform duration-300 hover:shadow-2xl hover:scale-105">
+            <img class="self-stretch flex-1 relative rounded-lg max-w-full overflow-hidden max-h-full object-cover z-[2]" loading="lazy" alt="Modern" src="../images/rectangle-365@2x.png" />
+            <div class="flex flex-row items-center justify-center py-0 px-px">
+              <div class="relative inline-block text-center text-lg font-medium text-gray-800">Modern Style</div>
+            </div>
+          </div>
+          <!-- Rustic Style -->
+          <div class="style-card h-[228px] w-[275px] rounded-2xl box-border flex flex-col items-center justify-start pt-[18px] pb-7 pr-[15px] pl-4 gap-[13px] z-[1] border-[1px] border-solid border-gray-300 bg-white shadow-lg cursor-pointer transform transition-transform duration-300 hover:shadow-2xl hover:scale-105">
+            <img class="self-stretch flex-1 relative rounded-lg max-w-full overflow-hidden max-h-full object-cover z-[2]" loading="lazy" alt="Rustic" src="../images/rectangle-365@2x.png" />
+            <div class="flex flex-row items-center justify-center py-0 px-px">
+              <div class="relative inline-block text-center text-lg font-medium text-gray-800">Rustic Style</div>
+            </div>
+          </div>
+          <!-- Minimalist Style -->
+          <div class="style-card h-[228px] w-[275px] rounded-2xl box-border flex flex-col items-center justify-start pt-[18px] pb-7 pr-[15px] pl-4 gap-[13px] z-[1] border-[1px] border-solid border-gray-300 bg-white shadow-lg cursor-pointer transform transition-transform duration-300 hover:shadow-2xl hover:scale-105">
+            <img class="self-stretch flex-1 relative rounded-lg max-w-full overflow-hidden max-h-full object-cover z-[2]" loading="lazy" alt="Minimalist" src="../images/rectangle-365@2x.png" />
+            <div class="flex flex-row items-center justify-center py-0 px-px">
+              <div class="relative inline-block text-center text-lg font-medium text-gray-800">Minimalist Style</div>
+            </div>
+          </div>
+          <!-- Industrial Style -->
+          <div class="style-card h-[228px] w-[275px] rounded-2xl box-border flex flex-col items-center justify-start pt-[18px] pb-7 pr-[15px] pl-4 gap-[13px] z-[1] border-[1px] border-solid border-gray-300 bg-white shadow-lg cursor-pointer transform transition-transform duration-300 hover:shadow-2xl hover:scale-105">
+            <img class="self-stretch flex-1 relative rounded-lg max-w-full overflow-hidden max-h-full object-cover z-[2]" loading="lazy" alt="Industrial" src="../images/rectangle-365@2x.png" />
+            <div class="flex flex-row items-center justify-center py-0 px-px">
+              <div class="relative inline-block text-center text-lg font-medium text-gray-800">Industrial Style</div>
+            </div>
+          </div>
+          <!-- Professional Style -->
+          <div class="style-card h-[228px] w-[275px] rounded-2xl box-border flex flex-col items-center justify-start pt-[18px] pb-7 pr-[15px] pl-4 gap-[13px] z-[1] border-[1px] border-solid border-gray-300 bg-white shadow-lg cursor-pointer transform transition-transform duration-300 hover:shadow-2xl hover:scale-105">
+            <img class="self-stretch flex-1 relative rounded-lg max-w-full overflow-hidden max-h-full object-cover z-[2]" loading="lazy" alt="Professional" src="../images/rectangle-366@2x.png" />
+            <div class="flex flex-row items-center justify-center py-0 px-px">
+              <div class="relative inline-block text-center text-lg font-medium text-gray-800">Professional Style</div>
+            </div>
+          </div>
+          <!-- Tropical Style -->
+          <div class="style-card h-[228px] w-[275px] rounded-2xl box-border flex flex-col items-center justify-start pt-[18px] pb-7 pr-[15px] pl-4 gap-[13px] z-[1] border-[1px] border-solid border-gray-300 bg-white shadow-lg cursor-pointer transform transition-transform duration-300 hover:shadow-2xl hover:scale-105">
+            <img class="self-stretch flex-1 relative rounded-lg max-w-full overflow-hidden max-h-full object-cover z-[2]" loading="lazy" alt="Tropical" src="../images/rectangle-366@2x.png" />
+            <div class="flex flex-row items-center justify-center py-0 px-px">
+              <div class="relative inline-block text-center text-lg font-medium text-gray-800">Tropical Style</div>
+            </div>
+          </div>
+          <!-- Coastal Style -->
+          <div class="style-card h-[228px] w-[275px] rounded-2xl box-border flex flex-col items-center justify-start pt-[18px] pb-7 pr-[15px] pl-4 gap-[13px] z-[1] border-[1px] border-solid border-gray-300 bg-white shadow-lg cursor-pointer transform transition-transform duration-300 hover:shadow-2xl hover:scale-105">
+            <img class="self-stretch flex-1 relative rounded-lg max-w-full overflow-hidden max-h-full object-cover z-[2]" loading="lazy" alt="Coastal" src="../images/rectangle-366@2x.png" />
+            <div class="flex flex-row items-center justify-center py-0 px-px">
+              <div class="relative inline-block text-center text-lg font-medium text-gray-800">Coastal Style</div>
+            </div>
+          </div>
+          <!-- Tribal Style -->
+          <div class="style-card h-[228px] w-[275px] rounded-2xl box-border flex flex-col items-center justify-start pt-[18px] pb-7 pr-[15px] pl-4 gap-[13px] z-[1] border-[1px] border-solid border-gray-300 bg-white shadow-lg cursor-pointer transform transition-transform duration-300 hover:shadow-2xl hover:scale-105">
+            <img class="self-stretch flex-1 relative rounded-lg max-w-full overflow-hidden max-h-full object-cover z-[2]" loading="lazy" alt="Tribal" src="../images/rectangle-366@2x.png" />
+            <div class="flex flex-row items-center justify-center py-0 px-px">
+              <div class="relative inline-block text-center text-lg font-medium text-gray-800">Tribal Style</div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Current Style and Result Sections -->
+        <div class="self-stretch flex flex-row items-start justify-start pt-0 pb-[13px] pr-4 pl-[15px] box-border max-w-full text-17xl">
+          <div class="flex-1 flex flex-row flex-wrap items-start justify-start gap-[42px] max-w-full mq750:gap-[21px]">
+            <div class="flex-1 flex flex-col items-start justify-start gap-[23px] min-w-[364px] max-w-full mq750:min-w-full">
+              <h3 class="m-0 relative text-inherit font-semibold font-inherit mq750:text-10xl mq450:text-3xl">Your Current Style</h3>
+              <div class="self-stretch rounded-13xl box-border flex flex-col items-center justify-start pt-[233px] pb-[188px] pr-5 pl-[21px] gap-[13px] max-w-full text-5xl text-gainsboro border-[1px] border-dashed border-gainsboro mq750:pt-[151px] mq750:pb-[122px] mq750:box-border">
+                <div id="currentStyleImage" class="w-[560px] h-[560px] relative rounded-13xl box-border hidden max-w-full border-[1px] border-dashed border-gainsboro"></div>
+                <input id="uploadInput" type="file" accept="image/*" class="hidden" />
+                <button id="uploadButton" class="cursor-pointer [border:none] pt-[23px] px-5 pb-[22px] bg-mediumblue w-[299px] rounded-xl flex flex-row items-start justify-center box-border z-[1] hover:bg-mediumslateblue">
+                  <div class="h-[89px] w-[299px] relative rounded-xl bg-mediumblue hidden"></div>
+                  <div class="relative text-13xl font-nunito text-white text-left inline-block min-w-[105px] z-[2] mq750:text-7xl mq450:text-lgi">Upload</div>
+                </button>
+                <div class="flex flex-row items-start justify-start py-0 pr-[81px] pl-20 mq450:pl-5 mq450:pr-5 mq450:box-border">
+                  <div class="relative z-[1] mq450:text-lgi">Png, jpg, etc.</div>
+                </div>
+              </div>
+            </div>
+            <div class="flex-1 flex flex-col items-start justify-start gap-[23px] min-w-[364px] max-w-full mq750:min-w-full">
+              <div class="flex flex-row items-start justify-start py-0 px-[17px]">
+                <h3 class="m-0 relative text-inherit font-semibold font-inherit inline-block min-w-[105px] mq750:text-10xl mq450:text-3xl">Result</h3>
+              </div>
+              <div id="resultImage" class="self-stretch h-[560px] relative rounded-13xl box-border border-[1px] border-dashed border-gainsboro"></div>
+            </div>
+          </div>
+        </div>
+        <!-- Footer Input -->
+        <div class="self-stretch h-[89px] flex flex-row items-center justify-center py-0 px-4 box-border min-w-[250px]">
+          <div class="h-[50px] w-[300px] rounded-full bg-silver flex items-center justify-center box-border">
+            <div id="statusBar" class="w-full h-full rounded-full bg-gray-400 text-white font-nunito text-xl text-center z-[1] transition-colors duration-300 flex items-center justify-center">
+              Please Choose Style
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    // Style Choosing
+    const cards = document.querySelectorAll('.style-card');
+    const statusBar = document.getElementById('statusBar');
+    let selectedCard = null;
+
+    cards.forEach(card => {
+      card.addEventListener('click', () => {
+        // Remove classes from the previously selected card
+        if (selectedCard && selectedCard !== card) {
+          selectedCard.classList.remove('border-darkorange', 'shadow-darkorange/50', 'scale-105', 'border-indigo-600', 'shadow-indigo-600/50');
+        }
+        // Add classes to the currently clicked card
+        card.classList.add('border-darkorange', 'shadow-darkorange/50', 'scale-105');
+        // Update the selectedCard to the currently clicked card
+        selectedCard = card;
+
+        // Change status bar to active state with the chosen style
+        statusBar.classList.add('bg-seagreen-100');
+        statusBar.classList.remove('bg-gray-400');
+        statusBar.textContent = `Choosing ${card.querySelector('div.relative').textContent}`;
+      });
+
+      card.addEventListener('mouseover', () => {
+        if (!card.classList.contains('border-darkorange')) {
+          card.classList.add('border-indigo-600', 'shadow-indigo-600/50', 'scale-105');
+        }
+      });
+
+      card.addEventListener('mouseout', () => {
+        if (!card.classList.contains('border-darkorange')) {
+          card.classList.remove('border-indigo-600', 'shadow-indigo-600/50', 'scale-105');
+        }
+      });
+    });
+    // Upload 
+  const uploadButton = document.getElementById('uploadButton');
+    const uploadInput = document.getElementById('uploadInput');
+    const currentStyleImage = document.getElementById('currentStyleImage');
+    const resultImage = document.getElementById('resultImage');
+
+    uploadButton.addEventListener('click', () => {
+      uploadInput.click();
+    });
+
+    uploadInput.addEventListener('change', () => {
+      const file = uploadInput.files[0];
+      if (file) {
+        const reader = new FileReader();
+        reader.onload = (e) => {
+          // Display the uploaded image in the current style section
+          currentStyleImage.style.backgroundImage = `url(${e.target.result})`;
+          currentStyleImage.classList.remove('hidden');
+          currentStyleImage.classList.add('block');
+          currentStyleImage.style.backgroundSize = 'cover';
+          currentStyleImage.style.backgroundPosition = 'center';
+
+          // Display the uploaded image in the result section
+          resultImage.style.backgroundImage = `url(${e.target.result})`;
+          resultImage.style.backgroundSize = 'cover';
+          resultImage.style.backgroundPosition = 'center';
+        };
+        reader.readAsDataURL(file);
+      }
+    });
+  });
+
+  
+
+</script>
+</html>

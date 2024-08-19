@@ -1,0 +1,21 @@
+{
+  "name": "idecor",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "start": "parcel src/html/index.html ",
+    "build": "parcel build src/html/index.html  --dist-dir ./build",
+    "build:css": "tailwindcss build src/css/global.css -o src/css/output.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.7.0",
+    "postcss": "^8.4.39",
+    "tailwindcss": "^3.4.5"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.19"
+  }
+}
